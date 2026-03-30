@@ -1363,9 +1363,10 @@ footer p:first-child {
     }
 
     /* ===== CARDS DE TRANSPORTE COM BORDAS ===== */
+/* ===== CARDS DE TRANSPORTE COM BORDAS ===== */
 .transporte-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin: 40px 0;
 }
