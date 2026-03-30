@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IPREM - Central de Informações e Apoio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    IPREM - Instituto de Previdência Municipal
+  </div>
+  <div class="header-main">
+    <a href="#" class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+      </div>
+      <div class="logo-text">
+        <strong>IPREM</strong>
+        <span>Prefeitura de São Paulo</span>
+      </div>
+    </a>
+    <nav>
+      <a href="#" class="active">Página Inicial</a>
+      <a href="quemSomos.html">Quem Somos</a>
+      <a href="#">Mapa do IPREM</a>
+      <a href="#">Links Úteis</a>
+      <a href="#">Glossário</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#">Página Inicial</a>
+    <a href="quemSomos.html">Quem Somos</a>
+    <a href="#">Mapa da IPREM</a>
+    <a href="#">Links Úteis</a>
+    <a href="#">Glossário</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <span class="hero-badge">✦ Portal do Servidor Público</span>
+    <h1>Bem-vindo ao <em>IPREM</em><br>Central de Informações</h1>
+    <p>A plataforma oficial do Instituto de previdência da Prefeitura de São Paulo. Acesse serviços, notícias e suporte para servidores públicos municipais.</p>
+    <a href="#" class="hero-btn">Saiba mais sobre o IPREM →</a>
+  </div>
+</section>
+
+<!-- QUICK ACCESS -->
+<div class="quick-access">
+  <div class="quick-cards">
+    <a href="#" class="quick-card">
+      <div class="icon icon-blue">📊</div>
+      <strong>Painel Gestão de Pessoas</strong>
+      <span>Atendimento</span>
+    </a>
+    <a href="#" class="quick-card">
+      <div class="icon icon-green">💰</div>
+      <strong>Acesso ao Holerite</strong>
+      <span>Área Privada PMSP</span>
+    </a>
+    <a href="#" class="quick-card">
+      <div class="icon icon-orange">📅</div>
+      <strong>Datas e Feriados</strong>
+      <span>Calendário Oficial</span>
+    </a>
+    <a href="#" class="quick-card">
+      <div class="icon icon-purple">🏢</div>
+      <strong>Agendamento de Salas</strong>
+      <span>Pontos de Afeto</span>
+    </a>
+  </div>
+</div>
+
+<!-- NEWS SECTION -->
+<section class="section">
+  <div class="section-header">
+    <h2 class="section-title">IPREM Notícias</h2>
+    <a href="#" class="see-all">Ver todas as notícias</a>
+  </div>
+  <div class="news-grid">
+    <a href="#" class="news-card featured">
+      <div class="news-img tall" style="background:linear-gradient(135deg,#003f8a 0%,#1a6fc4 100%);font-size:72px;">🏙️</div>
+      <div class="news-body">
+        <span class="news-tag">Destaque</span>
+        <p class="news-title">Nova plataforma IPREM traz mais agilidade e acesso às informações para servidores municipais de São Paulo</p>
+        <p class="news-date">28 de março de 2025</p>
+      </div>
+    </a>
+    <a href="#" class="news-card">
+      <div class="news-img" style="background:linear-gradient(135deg,#e8f0fb 0%,#c8dcf7 100%);font-size:48px;">📋</div>
+      <div class="news-body">
+        <span class="news-tag">RH</span>
+        <p class="news-title">Calendário de capacitações do primeiro semestre já está disponível</p>
+        <p class="news-date">22 de março de 2025</p>
+      </div>
+    </a>
+    <a href="#" class="news-card">
+      <div class="news-img" style="background:linear-gradient(135deg,#e6f7ee 0%,#b8e8cc 100%);font-size:48px;">🎓</div>
+      <div class="news-body">
+        <span class="news-tag">Capacitação</span>
+        <p class="news-title">Programa de desenvolvimento de lideranças abre novas vagas para 2025</p>
+        <p class="news-date">18 de março de 2025</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- PROFILE SECTION -->
+<section class="section" style="margin-top: 0;">
+  <h2 class="section-title" style="margin-bottom:20px;">IPREM no seu perfil de usuário</h2>
+  <div class="profile-section">
+    <div class="profile-tabs">
+      <div class="profile-tab active" data-tab="gp">Gestão de Pessoas</div>
+      <div class="profile-tab" data-tab="beneficios">Benefícios</div>
+      <div class="profile-tab" data-tab="carreira">Carreira</div>
+      <div class="profile-tab" data-tab="saude">Saúde</div>
+    </div>
+    <div class="profile-content">
+      <div class="profile-grid" id="profileGrid">
+        <a href="#" class="profile-item">
+          <div class="p-icon">📊</div>
+          <span>Painel Gestão de Pessoas</span>
+        </a>
+        <a href="#" class="profile-item">
+          <div class="p-icon">💼</div>
+          <span>Holerite e Contracheque</span>
+        </a>
+        <a href="#" class="profile-item">
+          <div class="p-icon">📅</div>
+          <span>Calendário e Feriados</span>
+        </a>
+        <a href="#" class="profile-item">
+          <div class="p-icon">🏢</div>
+          <span>Agendamento de Salas</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INFO BANNER -->
+<div class="info-banner">
+  <div class="info-text">
+    <h2>Quem somos?</h2>
+    <p>A IPREM é a nova plataforma do Instituo de Previdência Municipal. Nosso objetivo é facilitar o acesso às informações e serviços para todos os servidores públicos municipais de São Paulo.</p>
+  </div>
+  <a href="#" class="info-btn">Saiba mais sobre a IPREM</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <a href="#" class="logo footer-brand">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+          </div>
+          <div class="logo-text">
+            <strong>IPREM</strong>
+            <span>Prefeitura de São Paulo</span>
+          </div>
+        </a>
+        <p class="footer-about">IPREM — Central de Informações e Apoio do IPREM. Contate a IPREM pelo e-mail <strong style="color:rgba(255,255,255,0.7)">IPREM@prefeitura.sp.gov.br</strong></p>
+        <div class="social-links">
+          <a class="social-link" title="Facebook">f</a>
+          <a class="social-link" title="Instagram">📷</a>
+          <a class="social-link" title="LinkedIn">in</a>
+          <a class="social-link" title="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="#">Página Inicial</a></li>
+          <li><a href="quemSomos.html">Quem Somos</a></li>
+          <li><a href="#">Mapa da IPREM</a></li>
+          <li><a href="#">Glossário</a></li>
+          <li><a href="#">Links Úteis</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Atendimento</h4>
+        <ul>
+          <li><a href="#">Fale com a </a></li>
+          <li><a href="#">Fale com sua </a></li>
+          <li><a href="#">Agendamento de Salas</a></li>
+          <li><a href="#">Calendário Oficial</a></li>
+          <li><a href="#">Acesso ao Holerite</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Copyright © Prefeitura de São Paulo — Iprem @2026</span>
+      <span>Todos os direitos reservados</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
