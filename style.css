@@ -1501,3 +1501,327 @@ footer p:first-child {
     grid-template-columns: 1fr;
   }
 }
+
+ .contatos-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    /* Cards de contato principal */
+    .contato-principal-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      margin-bottom: 60px;
+    }
+
+    .contato-principal-card {
+      background: var(--branco);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--sombra);
+      transition: transform 0.3s;
+      border-top: 4px solid var(--azul);
+    }
+
+    .contato-principal-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--sombra-hover);
+    }
+
+    .contato-principal-card h2 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--azul);
+      margin-bottom: 8px;
+    }
+
+    .contato-principal-card .cargo {
+      color: var(--laranja-principal);
+      font-weight: 600;
+      margin-bottom: 20px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--cinza-claro);
+    }
+
+    .contato-detalhe {
+      margin-bottom: 12px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .contato-detalhe .emoji {
+      font-size: 18px;
+      min-width: 24px;
+    }
+
+    .contato-detalhe p {
+      font-size: 14px;
+      color: var(--cinza-texto);
+      line-height: 1.5;
+    }
+
+    .contato-detalhe a {
+      color: var(--azul);
+      text-decoration: none;
+    }
+
+    .contato-detalhe a:hover {
+      text-decoration: underline;
+    }
+
+    .curriculo {
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px dashed var(--cinza-claro);
+    }
+
+    .curriculo h4 {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--azul);
+      margin-bottom: 8px;
+    }
+
+    .curriculo p {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--cinza-texto-claro);
+    }
+
+    /* Seção de estrutura administrativa */
+    .estrutura-section {
+      margin: 60px 0;
+    }
+
+    .estrutura-section h2 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--azul);
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .estrutura-section h2::before {
+      content: '';
+      width: 5px;
+      height: 28px;
+      background: var(--laranja-principal);
+      border-radius: 3px;
+    }
+
+    .coordenadoria-card {
+      background: var(--branco);
+      border-radius: var(--radius);
+      margin-bottom: 32px;
+      overflow: hidden;
+      box-shadow: var(--sombra);
+    }
+
+    .coordenadoria-header {
+      background: var(--azul);
+      color: white;
+      padding: 16px 24px;
+    }
+
+    .coordenadoria-header h3 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .coordenadoria-content {
+      padding: 24px;
+    }
+
+    .servidor-item {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 16px;
+      border-bottom: 1px solid var(--cinza-claro);
+      transition: background 0.3s;
+    }
+
+    .servidor-item:hover {
+      background: var(--cinza-bg);
+    }
+
+    .servidor-info {
+      flex: 2;
+    }
+
+    .servidor-nome {
+      font-weight: 700;
+      font-size: 16px;
+      color: var(--azul);
+      margin-bottom: 4px;
+    }
+
+    .servidor-cargo {
+      font-size: 13px;
+      color: var(--laranja-principal);
+      margin-bottom: 8px;
+    }
+
+    .servidor-contato {
+      font-size: 12px;
+      color: var(--cinza-texto-claro);
+    }
+
+    .servidor-contato p {
+      margin: 4px 0;
+    }
+
+    .vago {
+      color: #999;
+      font-style: italic;
+      padding: 16px;
+    }
+
+    /* Atendimento ao público */
+    .atendimento-section {
+      background: linear-gradient(135deg, var(--azul), var(--azul-medio));
+      border-radius: var(--radius);
+      padding: 40px;
+      margin: 60px 0;
+      color: white;
+    }
+
+    .atendimento-section h2 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 28px;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+
+    .atendimento-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+
+    .atendimento-card {
+      background: rgba(255,255,255,0.1);
+      border-radius: var(--radius);
+      padding: 24px;
+      backdrop-filter: blur(10px);
+    }
+
+    .atendimento-card h3 {
+      font-size: 18px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .atendimento-card p {
+      font-size: 14px;
+      margin-bottom: 8px;
+      opacity: 0.9;
+    }
+
+    .atendimento-card a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .atendimento-card a:hover {
+      text-decoration: underline;
+    }
+
+    /* Descomplica */
+    .descomplica-card {
+      background: var(--branco);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin: 40px 0;
+      text-align: center;
+      border: 2px solid var(--laranja-claro);
+    }
+
+    .descomplica-card h3 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 22px;
+      color: var(--azul);
+      margin-bottom: 16px;
+    }
+
+    .descomplica-card p {
+      color: var(--cinza-texto);
+      margin-bottom: 20px;
+    }
+
+    .btn-descomplica {
+      display: inline-block;
+      background: var(--laranja-principal);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn-descomplica:hover {
+      background: var(--laranja-escuro);
+    }
+
+    /* Transparência */
+    .transparencia-card {
+      background: var(--cinza-bg);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .transparencia-card h3 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 22px;
+      color: var(--azul);
+      margin-bottom: 16px;
+    }
+
+    .btn-transparencia {
+      display: inline-block;
+      background: var(--azul);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 16px 8px;
+      transition: background 0.3s;
+    }
+
+    .btn-transparencia:hover {
+      background: var(--azul-medio);
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .contato-principal-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .atendimento-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .servidor-item {
+        flex-direction: column;
+      }
+      
+      .estrutura-section h2 {
+        font-size: 24px;
+      }
+    }
