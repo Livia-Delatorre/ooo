@@ -1,14 +1,14 @@
 :root {
-      --azul: #0091FF;
-      --azul-claro: #6dc0ff;
-      --azul-medio:#0468b4;
-      --amarelo: #ffbe7c;
-      --amarelo-claro: #FF7F00;
-      --cinza-bg: #f4f6fa;
-      --cinza-claro: #e8ecf4;
-      --cinza-texto: #444;
+      --azul: #1d6f9c;
+      --azul-claro: #8bbdd6;
+      --azul-medio: #3587b3;
+      --amarelo: #f0b87a;
+      --amarelo-claro: #e07e32;
+      --cinza-bg: #fafbfc;
+      --cinza-claro: #edf2f7;
+      --cinza-texto: #334155;
       --branco: #fff;
-      --sombra: 0 4px 24px rgba(0,63,138,0.10);
+      --sombra: 0 4px 20px rgba(0,0,0,0.06);
       --radius: 14px;
     }
 
@@ -67,6 +67,13 @@
 
     .logo-icon svg { width: 28px; height: 28px; fill: #fff; }
 
+     .sua-div {
+     border: 2px solid var(--azul);
+     border-radius: var(--radius);
+    padding: 16px;
+    display: inline-block;
+    }
+
     .logo-text {
       display: flex;
       flex-direction: column;
@@ -86,6 +93,7 @@
       letter-spacing: 0.5px;
       text-transform: uppercase;
     }
+
 
     nav {
       display: flex;
