@@ -232,17 +232,21 @@
 
     /* ===== QUICK ACCESS ===== */
     .quick-access {
-      max-width: 1200px;
-      margin: -36px auto 0;
+      width: 100%;
+      margin: -36px 0 0;
       padding: 0 24px;
       position: relative;
       z-index: 10;
+      display: flex;
+      justify-content: center;
     }
 
     .quick-cards {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 280px);
       gap: 16px;
+      max-width: 1200px; /* Largura máxima para o container */
+      width: 100%;
     }
 
     .quick-card {
