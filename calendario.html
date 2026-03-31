@@ -3,23 +3,192 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>IPREM - Quem Somos | Instituto de Previdência Municipal</title>
-  <meta name="description" content="Conheça a história do IPREM-SP, desde o Montepio de 1909 até os dias atuais. Missão, visão e valores do Instituto de Previdência Municipal de São Paulo.">
+  <title>Calendário de Pagamento de Benefícios 2026 - IPREM</title>
+  <meta name="description" content="Confira as datas de pagamento dos benefícios de pensão e aposentadoria do IPREM para o ano de 2026.">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet"/>
   <link href="style.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="iprem.png">
+  <style>
+    /* Estilos específicos para a página da notícia */
+    .noticia-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 24px;
+    }
+
+    .noticia-card {
+      background: var(--branco);
+      border-radius: var(--radius);
+      box-shadow: var(--sombra);
+      overflow: hidden;
+      margin-bottom: 40px;
+    }
+
+    .noticia-imagem {
+      width: 100%;
+      background: var(--cinza-claro);
+      text-align: center;
+      padding: 40px;
+      border-bottom: 1px solid var(--cinza-claro);
+    }
+
+    .noticia-imagem img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .noticia-conteudo {
+      padding: 40px;
+    }
+
+    .noticia-tag {
+      display: inline-block;
+      background: #e8f0fb;
+      color: var(--azul);
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    .noticia-titulo {
+      font-family: 'Nunito', sans-serif;
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--azul);
+      line-height: 1.3;
+      margin-bottom: 16px;
+    }
+
+    .noticia-data {
+      color: #999;
+      font-size: 13px;
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--cinza-claro);
+    }
+
+    .noticia-texto {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--cinza-texto);
+    }
+
+    .noticia-texto p {
+      margin-bottom: 20px;
+    }
+
+    .noticia-texto h3 {
+      font-family: 'Nunito', sans-serif;
+      font-size: 22px;
+      color: var(--azul);
+      margin: 32px 0 16px 0;
+    }
+
+    .tabela-pagamentos {
+      margin: 32px 0;
+      overflow-x: auto;
+    }
+
+    .tabela-pagamentos table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--cinza-bg);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .tabela-pagamentos th,
+    .tabela-pagamentos td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--cinza-claro);
+    }
+
+    .tabela-pagamentos th {
+      background: var(--azul);
+      color: white;
+      font-weight: 600;
+    }
+
+    .tabela-pagamentos tr:last-child td {
+      border-bottom: none;
+    }
+
+    .info-box {
+      background: #e8f0fb;
+      border-left: 4px solid var(--azul);
+      padding: 20px;
+      border-radius: 12px;
+      margin: 32px 0;
+    }
+
+    .info-box p {
+      margin-bottom: 0;
+    }
+
+    .btn-voltar {
+      display: inline-block;
+      background: var(--cinza-claro);
+      color: var(--azul);
+      padding: 10px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+      margin-top: 20px;
+    }
+
+    .btn-voltar:hover {
+      background: var(--azul);
+      color: white;
+    }
+
+    .btn-acessar {
+      display: inline-block;
+      background: var(--azul);
+      color: white;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+      margin-top: 16px;
+    }
+
+    .btn-acessar:hover {
+      background: var(--azul-medio);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .noticia-conteudo {
+        padding: 24px;
+      }
+      .noticia-titulo {
+        font-size: 24px;
+      }
+      .noticia-imagem {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<!-- HEADER (igual ao seu original) -->
+<!-- HEADER -->
 <header>
   <div class="header-top">
     IPREM - Instituto de Previdência Municipal
   </div>
   <div class="header-main">
-    <a href="#" class="logo">
+    <a href="index.html" class="logo">
       <div class="logo-icon">
-        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
       </div>
       <div class="logo-text">
         <strong>IPREM</strong>
@@ -28,7 +197,7 @@
     </a>
     <nav>
       <a href="index.html">Página Inicial</a>
-      <a href="quem-somos.html" class="active">Quem Somos</a>
+      <a href="quem-somos.html">Quem Somos</a>
       <a href="mapa-iprem.html">Mapa do IPREM</a>
       <a href="contatos.html">Contatos</a>
       <a href="#">Glossário</a>
@@ -39,9 +208,9 @@
   </div>
   <div class="mobile-nav" id="mobileNav">
     <a href="index.html">Página Inicial</a>
-    <a href="quemSomos.html">Quem Somos</a>
-    <a href="mapa-iprem.html">Mapa da IPREM</a>
-    <a href="#">Links Úteis</a>
+    <a href="quem-somos.html">Quem Somos</a>
+    <a href="mapa-iprem.html">Mapa do IPREM</a>
+    <a href="contatos.html">Contatos</a>
     <a href="#">Glossário</a>
   </div>
 </header>
@@ -50,28 +219,101 @@
   <!-- Hero section -->
   <section class="hero">
     <div class="hero-content">
+      <span class="hero-badge">📅 DESTAQUE</span>
       <h1>Calendário de Pagamento de Benefícios 2026</h1>
+      <p>Confira as datas de pagamento de aposentadorias e pensões do IPREM para o ano de 2026</p>
     </div>
   </section>
-  <div class="news-grid">
-    <a href="#" class="news-card featured">
-      <div class="news-img tall">
-        <img src="calendario.jpg" alt="Calendário de Pagamento">
-        </div>
-      <div class="news-body">
-        <span class="news-tag">Destaque</span>
-        <p class="news-title">Calendário de Pagamento de Benefícios 2026</p>
-        <p class="news-date">Quinta-feira, 26 de Março de 2026 | Horário: 09:15</p>
+
+  <!-- Conteúdo da notícia -->
+  <!-- Conteúdo da notícia -->
+<div class="noticia-container">
+  <div class="noticia-card">
+    <div class="noticia-conteudo">
+      <span class="noticia-tag">📢 Destaque</span>
+      <h1 class="noticia-titulo">Calendário de Pagamento de Benefícios 2026</h1>
+      <div class="noticia-data">
+        📅 Publicado em: 26 de março de 2026 | 🕘 09:15
       </div>
-    </a>
-  <div class="quem-somos-section">
-    <div class="historia-container">
-      <div class="historia-texto">
-        <h3>Os holerites são disponibilizados sempre a partir do dia 25 de cada mês.</h2>
-        <p>Confira aqui as datas de pagamento dos benefícios de pensão e aposentadoria para o ano de 2026.</p>
-        <p>Calendário de pagamento de benefícios de pensão e aposentadoria do ano de 2025</p>
-        <p>Para obter seus holerites, acesse a Área Privada do Portal do Servidor, clicando aqui.</p>
-
-
-    
+      
+      <div class="noticia-texto">
+        <p>Os holerites são disponibilizados sempre a partir do dia 25 de cada mês. Confira aqui as datas de pagamento dos benefícios de pensão e aposentadoria para o ano de 2026.</p>
+        
+        <!-- Imagem do calendário -->
+        <div style="text-align: center; margin: 32px 0;">
+          <img src="calendario.jpg" alt="Calendário de Pagamento de Benefícios 2026" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: var(--sombra);">
+        </div>
+        
+        <p>Para obter seus holerites, acesse a Área Privada do Portal do Servidor, clicando no botão abaixo:</p>
+        
+        <div style="text-align: center;">
+          <a href="#" class="btn-acessar">🔐 Acessar Área Privada</a>
+        </div>
+        
+        <div class="info-box">
+          <p><strong>ℹ️ Importante:</strong> O pagamento é realizado sempre no último dia útil de cada mês. Em caso de feriados ou pontos facultativos, as datas podem ser antecipadas ou postergadas. Acompanhe as atualizações no site oficial do IPREM.</p>
+        </div>
+        
+        <p><strong>Calendário de pagamento de benefícios de pensão e aposentadoria do ano de 2025</strong> também está disponível para consulta.</p>
+      </div>
+      
+      <a href="index.html" class="btn-voltar">← Voltar para a página inicial</a>
+    </div>
+  </div>
+</div>
 </main>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-text">
+          <strong style="color:#fff;">IPREM</strong>
+          <span style="color:rgba(255,255,255,0.5);">Prefeitura de São Paulo</span>
+        </div>
+        <p class="footer-about">Instituto de Previdência Municipal de São Paulo</p>
+      </div>
+      <div class="footer-col">
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="quem-somos.html">Quem Somos</a></li>
+          <li><a href="#">Transparência</a></li>
+          <li><a href="#">Legislação</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="#">Área do Servidor</a></li>
+          <li><a href="#">Holerite</a></li>
+          <li><a href="#">Agendamento</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 IPREM - Todos os direitos reservados</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Menu mobile
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  if (hamburger && mobileNav) {
+    hamburger.addEventListener('click', () => {
+      mobileNav.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !mobileNav.contains(e.target)) {
+        mobileNav.classList.remove('open');
+        hamburger.classList.remove('active');
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
