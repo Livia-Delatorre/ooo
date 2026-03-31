@@ -811,7 +811,7 @@
   margin: 40px 0 60px 0;
 }
 
-.quick-cards {
+.missao-visao .quick-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
